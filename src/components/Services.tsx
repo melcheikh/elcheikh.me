@@ -6,7 +6,7 @@ const services = [
     icon: <Package className="text-cyan-400" size={32} />,
     title: "SaaS in a Box (White-Label)",
     description: "I install, rebrand, and deploy my proprietary Booking & Payment engine for your business in less than 7 days. Ideal for Tattoo Studios, Salons, and Clinics.",
-    price: "From $2,500 Setup",
+    price: "Custom Quote",
     features: ["Google Calendar Sync", "Stripe Checkout", "Loyalty Ledger", "Admin Dashboard"]
   },
   {
