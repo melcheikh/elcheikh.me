@@ -16,13 +16,13 @@ export default function CTASection({
   title = "Ready to Grow Your Business Online?",
   subtitle = "Get a free consultation and discover how a custom website can save you money and bring in more clients.",
   buttonText = "Get a Free Quote",
-  buttonHref = "/contact",
+  buttonHref = "mailto:martin@elcheikh.me",
 }: CTASectionProps) {
   // Split title into words for stagger reveal
   const words = title.split(' ');
 
   return (
-    <section className="theme-abyssal relative overflow-hidden py-32 px-6 md:py-48">
+    <section id="contact" className="theme-abyssal relative overflow-hidden py-32 px-6 md:py-48">
       {/* Premium Gradient Background & Noise */}
       <div className="absolute inset-0 bg-gradient-to-b from-navy to-navy-dark opacity-95 z-0" />
       <div className="absolute inset-0 noise-overlay opacity-[0.05] pointer-events-none z-0" />
@@ -112,7 +112,7 @@ export default function CTASection({
             </MovingBorder>
 
             <Link
-              href="/portfolio"
+              href="#work"
               className="text-white/40 hover:text-white font-black tracking-[0.3em] uppercase text-xs transition-all border-b-2 border-white/5 hover:border-gold pb-2"
             >
               Audit My Work
