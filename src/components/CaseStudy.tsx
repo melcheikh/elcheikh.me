@@ -48,17 +48,17 @@ export default function CaseStudy({
         <div className="relative h-[400px] lg:h-auto overflow-hidden bg-navy">
           <div className="absolute inset-0 flex">
             {/* Before */}
-            <div className="relative w-1/2 h-full grayscale opacity-40 group-hover:opacity-20 transition-all duration-1000 border-r border-white/10">
-              <Image src={beforeImg} alt="Before" fill className="object-cover transition-transform duration-[2s] group-hover:scale-105" />
-              <div className="absolute top-6 left-6 px-3 py-1 bg-navy/80 backdrop-blur-md border border-white/10 rounded-md text-[9px] uppercase font-label text-white/50 tracking-widest z-20">
-                Legacy
+            <div className="relative w-1/2 h-full grayscale-[50%] opacity-80 group-hover:opacity-40 transition-all duration-1000 border-r border-white/10">
+              <Image src={beforeImg} alt="Customer View" fill className="object-cover transition-transform duration-[2s] group-hover:scale-105" />
+              <div className="absolute top-6 left-6 px-3 py-1 bg-navy/80 backdrop-blur-md border border-white/10 rounded-md text-[9px] uppercase font-label text-white/90 tracking-widest z-20">
+                Customer Experience
               </div>
             </div>
             {/* After */}
             <div className="relative w-1/2 h-full overflow-hidden">
-              <Image src={afterImg} alt="After" fill className="object-cover transition-transform duration-[2s] group-hover:scale-110" />
+              <Image src={afterImg} alt="Admin View" fill className="object-cover transition-transform duration-[2s] group-hover:scale-110" />
               <div className="absolute top-6 right-6 px-3 py-1 bg-teal rounded-md text-[9px] uppercase font-black text-navy tracking-widest z-20 shadow-lg shadow-teal/20">
-                Elcheikh Engineered
+                Management Engine
               </div>
               <div className="absolute inset-0 bg-gradient-to-l from-navy/60 via-transparent to-transparent" />
             </div>
