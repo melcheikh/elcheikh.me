@@ -7,10 +7,10 @@ import CaseStudy from '@/components/CaseStudy';
 const featuredCaseStudy = {
   title: "Mikka Tattoo Studio",
   category: "Premium E-Commerce & Booking",
-  description: "A complete digital transformation for a high-end tattoo studio. I replaced their commission-heavy platform with a custom-engineered booking and merchandise engine.",
-  beforeImg: "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2071&auto=format&fit=crop",
-  afterImg: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2074&auto=format&fit=crop",
-  results: ["+145% Direct Bookings", "Zero Platform Fees", "2.1s Mobile Load Speed", "Custom Merchandise Store"]
+  description: "A complete digital transformation for a high-end tattoo studio. I replaced their commission-heavy platform with a custom-engineered booking and management engine.",
+  beforeImg: "/mikka/booking flow.png",
+  afterImg: "/mikka/admin analytics.png",
+  results: ["+145% Direct Bookings", "Zero Platform Fees", "Automated Admin Dashboard", "Integrated Analytics"]
 };
 
 export default function Home() {
