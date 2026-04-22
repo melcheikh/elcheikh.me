@@ -2,24 +2,23 @@ import Link from 'next/link';
 
 const ecosystemLinks = [
   { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
+  { href: '#services', label: 'Services' },
+  { href: '#work', label: 'Portfolio' },
+  { href: '#about', label: 'About' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 const solutionLinks = [
-  { href: '/services#web-design', label: 'Web Design' },
-  { href: '/services#seo', label: 'SEO Services' },
-  { href: '/services#ecommerce', label: 'E-commerce Solutions' },
-  { href: '/services#marketing', label: 'Digital Marketing' },
+  { href: '#contact', label: 'Web Design' },
+  { href: '#contact', label: 'SEO Services' },
+  { href: '#contact', label: 'E-commerce Solutions' },
+  { href: '#contact', label: 'Digital Marketing' },
 ];
 
 const companyLinks = [
-  { href: '/about', label: 'About Us' },
-  { href: '/process', label: 'Our Process' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/careers', label: 'Careers' },
+  { href: '#about', label: 'About' },
+  { href: '#services', label: 'Our Process' },
+  { href: '#work', label: 'Portfolio' },
 ];
 
 const socialLinks = [
@@ -38,11 +37,11 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block mb-8 group">
               <span className="text-xl font-display font-bold text-white tracking-widest uppercase">
-                Ocean<span className="text-teal group-hover:text-gold transition-colors duration-500">Web</span>
+                Martin<span className="text-teal group-hover:text-gold transition-colors duration-500">Elcheikh</span>
               </span>
             </Link>
             <p className="font-body text-sm text-tertiary-fixed-dim leading-relaxed max-w-sm mb-10">
-              Ocean Web Solutions is a sophisticated Australian agency engineering high-performance digital artistry for corporate innovators.
+              Premium Web Engineer crafting high-performance digital artistry for forward-thinking brands and innovators worldwide.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -100,20 +99,19 @@ export default function Footer() {
             <h4 className="font-label text-[10px] tracking-[0.3em] text-teal uppercase mb-8">Contact</h4>
             <div className="space-y-6">
               <div>
-                <p className="font-body text-xs text-white mb-1">Australia HQ</p>
+                <p className="font-body text-xs text-white mb-1">Global Base</p>
                 <p className="font-body text-[10px] text-tertiary-fixed-dim uppercase tracking-widest">
-                  Level 2, 123 Moorabool Street, Geelong VIC 3220
+                  Buenos Aires, Argentina
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <a href="tel:1300OCEANWEB" className="font-body text-xs text-white hover:text-teal transition-colors">1300 OCEAN WEB</a>
-                <a href="mailto:hello@oceanwebsolutions.com.au" className="font-body text-xs text-teal hover:text-white transition-colors">hello@oceanwebsolutions.com.au</a>
+                <a href="mailto:martin@elcheikh.me" className="font-body text-xs text-teal hover:text-white transition-colors">martin@elcheikh.me</a>
               </div>
               <Link
-                href="/contact"
+                href="#contact"
                 className="inline-block px-6 py-2 rounded-full border border-teal/30 text-[10px] text-teal uppercase tracking-widest hover:bg-teal hover:text-navy transition-all duration-300"
               >
-                Contact Form
+                Let's Talk
               </Link>
             </div>
           </div>
@@ -122,7 +120,7 @@ export default function Footer() {
         {/* Legal & Compliance */}
         <div className="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="font-label text-[9px] text-white/40 tracking-[0.3em] uppercase">
-            © {new Date().getFullYear()} Ocean Web Solutions. All rights reserved.
+            © {new Date().getFullYear()} Martin Elcheikh. All rights reserved.
           </p>
           <div className="flex gap-8">
             <Link href="/privacy" className="font-label text-[9px] text-white/40 hover:text-gold tracking-[0.3em] uppercase transition-colors">Privacy Policy</Link>

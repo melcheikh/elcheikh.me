@@ -7,37 +7,37 @@ const services = [
     title: 'Digital Strategy',
     description: 'Data-driven insights to chart your path to digital success in the global market.',
     icon: <Compass className="w-8 h-8" />,
-    href: '/services/digital-strategy',
+    href: '#contact',
   },
   {
     title: 'Custom Web Design',
     description: 'Bespoke website designs tailored to engage audiences and drive high-value conversions.',
     icon: <PenTool className="w-8 h-8" />,
-    href: '/services/web-design',
+    href: '#contact',
   },
   {
     title: 'E-commerce Solutions',
     description: 'Seamless online stores built for scalability and optimized user journeys.',
     icon: <ShoppingBag className="w-8 h-8" />,
-    href: '/services/ecommerce',
+    href: '#contact',
   },
   {
     title: 'Performance Marketing',
     description: 'Targeted campaigns designed for high ROI and measurable enterprise growth.',
     icon: <BarChart3 className="w-8 h-8" />,
-    href: '/services/marketing',
+    href: '#contact',
   },
   {
     title: 'Content Production',
     description: 'Engaging content strategies that tell your unique brand story effectively.',
     icon: <Video className="w-8 h-8" />,
-    href: '/services/content',
+    href: '#contact',
   },
   {
     title: 'SEO & Optimization',
     description: 'Improving your visibility and ranking with comprehensive search engine optimization.',
     icon: <Rocket className="w-8 h-8" />,
-    href: '/services/seo',
+    href: '#contact',
   },
 ];
 

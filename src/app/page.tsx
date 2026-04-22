@@ -3,6 +3,7 @@ import Services from '@/components/Services';
 import About from '@/components/About';
 import CTASection from '@/components/CTASection';
 import CaseStudy from '@/components/CaseStudy';
+import Footer from '@/components/Footer';
 
 const featuredCaseStudy = {
   title: "Mikka Tattoo Studio",
@@ -18,7 +19,7 @@ export default function Home() {
     <>
       <Hero />
       <Services />
-      <section className="theme-abyssal section-padding relative overflow-hidden">
+      <section id="work" className="theme-abyssal section-padding relative overflow-hidden">
         <div className="absolute inset-0 noise-overlay opacity-[0.03]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mb-20">
@@ -30,6 +31,7 @@ export default function Home() {
       </section>
       <About />
       <CTASection />
+      <Footer />
     </>
   );
 }
