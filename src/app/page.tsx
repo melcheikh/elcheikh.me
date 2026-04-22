@@ -8,10 +8,15 @@ import Footer from '@/components/Footer';
 const featuredCaseStudy = {
   title: "Mikka Tattoo Studio",
   category: "Premium E-Commerce & Booking",
-  description: "A complete digital transformation for a high-end tattoo studio. I replaced their commission-heavy platform with a custom-engineered booking and management engine.",
-  beforeImg: "/mikka/booking flow.png",
-  afterImg: "/mikka/admin analytics.png",
-  results: ["+145% Direct Bookings", "Zero Platform Fees", "Automated Admin Dashboard", "Integrated Analytics"]
+  description: "A complete digital transformation for a high-end tattoo studio. I replaced their commission-heavy platform with a custom-engineered booking and management engine that reflects their premium artistry.",
+  mainImage: "/mikka/main.png",
+  featureImages: [
+    { src: "/mikka/booking flow.png", title: "Custom Booking Flow", span: "lg:col-span-2" },
+    { src: "/mikka/admin analytics.png", title: "Management Engine", span: "lg:col-span-1" },
+    { src: "/mikka/admin clients.png", title: "Client CRM Dashboard", span: "lg:col-span-1" },
+    { src: "/mikka/hamb menu main.png", title: "Immersive Navigation", span: "lg:col-span-2" }
+  ],
+  results: ["+145% Direct Bookings", "Zero Platform Fees", "Automated Workflows", "Integrated Analytics"]
 };
 
 export default function Home() {
