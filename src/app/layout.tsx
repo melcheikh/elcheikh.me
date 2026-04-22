@@ -1,12 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Epilogue, Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const epilogue = Epilogue({ 
+  subsets: ["latin"],
+  variable: '--font-epilogue',
+  display: 'swap',
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: '--font-manrope',
+  display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
-  title: "Martin el Cheikh | Software Architect",
-  description: "I build high-performance booking engines & custom software for service businesses.",
+  title: "Martin Elcheikh | Premium Web Engineer",
+  description: "I engineer high-performance digital artistry and reliable architecture for brands and innovators.",
 };
 
 export default function RootLayout({
@@ -15,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-black text-white antialiased`}>
+    <html lang="en" className={`scroll-smooth ${epilogue.variable} ${manrope.variable} ${spaceGrotesk.variable}`}>
+      <body className="font-body bg-navy text-on-surface antialiased">
         {children}
       </body>
     </html>
