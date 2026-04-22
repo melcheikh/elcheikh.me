@@ -16,7 +16,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/30 border border-blue-800/30 text-sm text-blue-200 mb-8 shadow-[0_0_15px_rgba(59,130,246,0.1)]"
         >
           <Terminal size={14} />
-          <span>Software Architect & Consultant</span>
+          <span>AI Developer & Product Researcher</span>
         </motion.div>
 
         <motion.h1 
@@ -25,10 +25,10 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight"
         >
-          I build high-performance <br />
+          Building AI tooling for <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-            booking engines
-          </span> & custom software.
+            structured data extraction
+          </span> & developer workflows.
         </motion.h1>
 
         <motion.p 
@@ -37,8 +37,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed"
         >
-          Stop losing clients to double-bookings and generic website builders. 
-          I engineer robust, custom platforms for service businesses that scale globally.
+          I build LLM-powered pipelines that turn messy unstructured inputs into clean, usable outputs. Python, OpenAI API, llama-index. Background in Psychology and a decade of operational process work.
         </motion.p>
 
         <motion.div 
@@ -47,8 +46,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <a href="#contact" className="inline-flex justify-center items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-400 transition-colors shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-            Book a Technical Audit
+          <a href="mailto:martinelcheikh@gmail.com" className="inline-flex justify-center items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-400 transition-colors shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+            Get in touch
             <ArrowRight size={18} />
           </a>
           <a href="#case-study" className="inline-flex justify-center items-center gap-2 bg-slate-900/50 border border-slate-700/50 text-white px-8 py-4 rounded-lg font-medium hover:bg-slate-800/50 transition-colors backdrop-blur-sm">
