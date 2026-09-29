@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "./Reveal";
 
@@ -32,6 +33,12 @@ const clients: Client[] = [
   },
 ];
 
+const mikkaShots = [
+  { src: "/renders/mikka-home.webp", caption: "public site", alt: "Mikka Tattoo home page: studio name over a black-and-white photo of the artist at work." },
+  { src: "/renders/mikka-booking.webp", caption: "booking flow", alt: "Session picker in the booking flow, with session lengths and deposits." },
+  { src: "/renders/mikka-admin.webp", caption: "studio back office", alt: "Admin gallery manager with a grid of uploaded tattoo photos." },
+];
+
 export default function Clients() {
   return (
     <section id="clients" className="scroll-mt-24 px-6 py-28">
@@ -63,6 +70,24 @@ export default function Clients() {
               platform I built for them. Live and earning for eight months
               straight.
             </p>
+            <div className="mb-6 grid gap-3 sm:grid-cols-3">
+              {mikkaShots.map((shot) => (
+                <figure key={shot.src} className="overflow-hidden rounded-lg border border-line">
+                  <div className="relative aspect-[16/9]">
+                    <Image
+                      src={shot.src}
+                      alt={shot.alt}
+                      fill
+                      className="object-cover object-top"
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                    />
+                  </div>
+                  <figcaption className="border-t border-line bg-panel px-3 py-2 font-mono text-[0.7rem] text-fog">
+                    {shot.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
             <span className="inline-flex items-center gap-1.5 font-mono text-[0.8rem] text-aqua transition-colors group-hover:text-paper">
               mikkatattoo.com <ArrowUpRight size={14} />
             </span>
