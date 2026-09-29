@@ -1,14 +1,65 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #000000;
-  --color-foreground: #ffffff;
+  --color-ink: #05080f;
+  --color-surface: #0b111c;
+  --color-panel: #0e1524;
+  --color-line: rgba(148, 163, 184, 0.16);
+  --color-paper: #e9edf5;
+  --color-fog: #8b96ab;
+  --color-amber: #ffb224;
+  --color-aqua: #4fd6c2;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetmono), ui-monospace, "SF Mono", monospace;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  ::selection {
+    background-color: var(--color-amber);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-amber);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Display voice: expanded, heavy, uppercase — broadcast/industrial */
+  .display {
+    font-family: var(--font-display);
+    font-stretch: 120%;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    line-height: 0.95;
+  }
+
+  /* Mono eyebrow used to open every section: a real path on the machine */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    color: var(--color-amber);
   }
 }
 
@@ -23,5 +74,26 @@
   }
   .animate-shimmer {
     animation: shimmer 2.5s infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    55% {
+      opacity: 1;
+    }
+    56%,
+    100% {
+      opacity: 0.15;
+    }
+  }
+  .animate-blink {
+    animation: blink 1.4s steps(1) infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-shimmer,
+    .animate-blink {
+      animation: none;
+    }
   }
 }

@@ -1,15 +1,29 @@
+import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import CaseStudy from "@/components/CaseStudy";
-import Services from "@/components/Services";
-import About from "@/components/About";
+import Evals from "@/components/Evals";
+import Ledger from "@/components/Ledger";
+import Studio from "@/components/Studio";
+import Clients from "@/components/Clients";
+import Lab from "@/components/Lab";
+import Background from "@/components/Background";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#0f172a] via-[#061022] to-[#020617] text-white">
-      <Hero />
-      <CaseStudy />
-      <Services />
-      <About />
-    </main>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <Evals />
+        <Ledger />
+        <Studio />
+        <Clients />
+        <Lab />
+        <Background />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
