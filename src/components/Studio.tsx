@@ -37,13 +37,6 @@ const pieces: Piece[] = [
     detail:
       "Lyric videos where each sung word lands on a simulated ocean and leaves real ripples, in time with the voice.",
   },
-  {
-    image: "/renders/skin.webp",
-    alt: "A game weapon finish themed on ocean and sunset.",
-    title: "Art for the workshop",
-    detail:
-      "A weapon-finish collection for Counter-Strike 2, painted with the sea and composed by the same render machinery.",
-  },
 ];
 
 export default function Studio() {
@@ -68,9 +61,9 @@ export default function Studio() {
           </p>
         </Reveal>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-3">
           {pieces.map((piece, index) => (
-            <Reveal key={piece.title} delay={(index % 2) * 0.08}>
+            <Reveal key={piece.title} delay={index * 0.08}>
               <article className="group h-full overflow-hidden rounded-xl border border-line bg-panel transition-colors hover:border-amber/30">
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <Image
@@ -78,7 +71,7 @@ export default function Studio() {
                     alt={piece.alt}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                    sizes="(max-width: 640px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
                 <div className="p-7">
